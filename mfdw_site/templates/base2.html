@@ -1,0 +1,502 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Mr Mac Computers</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="{% static 'img/favicon.png' %}" rel="icon">
+  <link href="{% static 'img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="{% static 'https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Open+Sans:300,300i,400,400i,700,700i' %}" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="{% static 'lib/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="{% static 'lib/animate/animate.min.css' %}" rel="stylesheet">
+  <link href="{% static 'lib/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet">
+  <link href="{% static 'lib/ionicons/css/ionicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'lib/magnific-popup/magnific-popup.css' %}" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="{% static 'css/style.css' %}" rel="stylesheet">
+
+  <!-- =======================================================
+    Theme Name: Avilon
+    Theme URL: https://bootstrapmade.com/avilon-bootstrap-landing-page-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
+</head>
+
+<body>
+  {% for page in page %}
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <h1><a href="#intro" class="scrollto">{{ page.page_title }}</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="#intro"><img src="img/logo.png" alt="" title=""></a> -->
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="#intro">Home</a></li>
+          
+          <li><a href="#features">Features</a></li>
+          
+          <li><a href="#team">Team</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#">Shopping Cart</a></li>
+
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+  <!--==========================
+    Intro Section
+  ============================-->
+  <section id="intro">
+
+    <div class="intro-text">
+      <h2>{{ page.page_heading }}</h2>
+      <p>{{ page.page_paragraph }}</p>
+      <a href="#about" class="btn-get-started scrollto">Start buying</a>
+    </div>
+
+
+
+  </section><!-- #intro -->
+
+
+
+
+  
+
+
+  <main id="main">
+
+    <!--==========================
+      About Us Section
+    ============================-->
+    <section id="about" class="section-bg">
+      <div class="container-fluid">
+        <div class="section-header">
+          <h3 class="section-title">About Us</h3>
+          <span class="section-divider"></span>
+          <p class="section-description">
+            {{ page.page_about_us }}
+          </p>
+        </div>
+
+        <br><br><br>
+
+
+<div>
+
+  
+
+  <center>
+    <h4><b>Click on any of the Icons below to purchase your preferred Item</b></h4>
+  </center>
+
+  <center>
+    <a href="https://paystack.com/pay/mrmaccomputers"><h4>OR USE OUR SHOPPING CART INSTEAD?..</h4></a>
+  </a>
+  </center>
+      
+</div>
+
+    <!--==========================
+      Clients
+    ============================-->
+    <section id="clients">
+      <div class="container">
+
+        <div class="row wow fadeInUp">
+
+          <div class="col-md-2">
+            <a href="/shoppingitems/">
+            <img src="{% static 'img/clients/client-1.png' %}" alt="">
+          </a>
+          </div>
+
+          <div class="col-md-2">
+            <a href="/shoppingitems/">
+            <img src="{% static 'img/clients/client-2.png' %}" alt="">
+          </a>
+          </div>
+
+          <div class="col-md-2">
+            <a href="/shoppingitems/">
+            <img src="{% static 'img/clients/client-3.png' %}" alt="">
+          </a>
+          </div>
+
+          <div class="col-md-2">
+            <a href="/shoppingitems/">
+            <img src="{% static 'img/clients/client-4.png' %}" alt="">
+          </a>
+          </div>
+
+
+        </div>
+      </div>
+    </section><!-- #more-features -->
+
+
+
+
+
+
+        <div class="row">
+          <div class="col-lg-6 about-img wow fadeInLeft">
+            <img src="{{ page.page_display_image.url }}" alt="">
+          </div>
+
+          <div class="col-lg-6 content wow fadeInRight">
+            <h2>{{ page.page_display_heading1 }}</h2>
+            <h3>{{ page.page_display_heading2 }}</h3>
+            <p>
+                {{ page.page_display_paragraph }}
+            </p>
+
+            <ul>
+              <li><i class="ion-android-checkmark-circle"></i> Free delivery.</li>
+              <li><i class="ion-android-checkmark-circle"></i> To arrive at your preferred location 2-3 days after purchase.</li>
+              <li><i class="ion-android-checkmark-circle"></i> Free tech-support for up to a month after purchase..</li>
+            </ul>
+
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- #about -->
+
+
+
+
+
+
+    
+    <!--==========================
+      Product Featuress Section
+    ============================-->
+    <section id="features">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-8 offset-lg-4">
+            <div class="section-header wow fadeIn" data-wow-duration="1s">
+              <h3 class="section-title">Product Featuress</h3>
+              <span class="section-divider"></span>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-5 features-img">
+            <img src="{% static 'img/product-features.png' %}" alt="" class="wow fadeInLeft">
+          </div>
+
+          <div class="col-lg-8 col-md-7 ">
+
+            <div class="row">
+
+              <div class="col-lg-6 col-md-6 box wow fadeInRight">
+                <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
+                <h4 class="title"><a href="">SPEED OF DELIVERY</a></h4>
+                <p class="description">We take the time of our customers very seriously so speed is paramount to us. We usually deliver within the country within 2-3 days from purchase using DHL services..</p>
+              </div>
+              <div class="col-lg-6 col-md-6 box wow fadeInRight" data-wow-delay="0.1s">
+                <div class="icon"><i class="ion-ios-flask-outline"></i></div>
+                <h4 class="title"><a href="">QUALITY</a></h4>
+                <p class="description">Our philosophy right from the start has been to place quality over quantity. All our products are tested and trusted..</p>
+              </div>
+              <div class="col-lg-6 col-md-6 box wow fadeInRight" data-wow-delay="0.2s">
+                <div class="icon"><i class="ion-social-buffer-outline"></i></div>
+                <h4 class="title"><a href="">WHOLESALE</a></h4>
+                <p class="description">We are guaranteed to meet the demands of our buyers no matter how large (or small) such purchases might be. Delivery is FREE as always</p>
+              </div>
+              <div class="col-lg-6 col-md-6 box wow fadeInRight" data-wow-delay="0.3s">
+                <div class="icon"><i class="ion-ios-analytics-outline"></i></div>
+                <h4 class="title"><a href="">CUSTOMER-CARE AND TECH-SUPPORT</a></h4>
+                <p class="description">To streamline customer experience and satisfaction, we offer remote tech support and any other form of assistance for upto a month after purchase, at no cost at all.</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- #features -->
+
+
+
+    <!--==========================
+      Call To Action Section
+    ============================-->
+    <section id="call-to-action">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9 text-center text-lg-left">
+            <h3 class="cta-title">Make Those Purchases now</h3>
+            <p class="cta-text"> Take advantage of this opportunity to stay safe indoors and have a fun and productive time with your family and loved ones.  </p>
+          </div>
+          <div class="col-lg-3 cta-btn-container text-center">
+   
+          </div>
+        </div>
+
+      </div>
+    </section><!-- #call-to-action -->
+
+   
+
+
+    
+
+    <!--==========================
+      Our Team Section
+    ============================-->
+    <section id="team" class="section-bg">
+      <div class="container">
+        <div class="section-header">
+          <h3 class="section-title">Our Team</h3>
+          <span class="section-divider"></span>
+          <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+        </div>
+        <div class="row wow fadeInUp">
+          <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="{% static 'img/team/team-1.jpg' %}" alt=""></div>
+              <h4>Walter White</h4>
+              <span>Chief Executive Officer</span>
+              <div class="social">
+                <a href=""><i class="fa fa-twitter"></i></a>
+                <a href=""><i class="fa fa-facebook"></i></a>
+                <a href=""><i class="fa fa-google-plus"></i></a>
+                <a href=""><i class="fa fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="{% static 'img/team/team-2.jpg' %}" alt=""></div>
+              <h4>Sarah Jhinson</h4>
+              <span>Product Manager</span>
+              <div class="social">
+                <a href=""><i class="fa fa-twitter"></i></a>
+                <a href=""><i class="fa fa-facebook"></i></a>
+                <a href=""><i class="fa fa-google-plus"></i></a>
+                <a href=""><i class="fa fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="{% static 'img/team/team-3.jpg' %}" alt=""></div>
+              <h4>William Anderson</h4>
+              <span>CTO</span>
+              <div class="social">
+                <a href=""><i class="fa fa-twitter"></i></a>
+                <a href=""><i class="fa fa-facebook"></i></a>
+                <a href=""><i class="fa fa-google-plus"></i></a>
+                <a href=""><i class="fa fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="{% static 'img/team/team-4.jpg' %}" alt=""></div>
+              <h4>Amanda Jepson</h4>
+              <span>Accountant</span>
+              <div class="social">
+                <a href=""><i class="fa fa-twitter"></i></a>
+                <a href=""><i class="fa fa-facebook"></i></a>
+                <a href=""><i class="fa fa-google-plus"></i></a>
+                <a href=""><i class="fa fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- #team -->
+
+    <!--==========================
+      Gallery Section
+    ============================-->
+    <section id="gallery">
+      <div class="container-fluid">
+        <div class="section-header">
+          <h3 class="section-title">Gallery</h3>
+          <span class="section-divider"></span>
+          <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+        </div>
+
+        <div class="row no-gutters">
+
+        {% for pic in my_gallery %}
+
+          <div class="col-lg-4 col-md-6">
+            <div class="gallery-item wow fadeInUp">
+                <a href="{{ pic.photo.url }}" class="gallery-popup">
+                  <img src="{{ pic.photo.url }}" alt="">
+                </a>
+            </div>
+          </div>
+
+        {% endfor %}
+
+        </div>
+
+      </div>
+    </section><!-- #gallery -->
+
+    <!--==========================
+      Contact Section
+    ============================-->
+    <section id="contact">
+      <div class="container">
+        <div class="row wow fadeInUp">
+
+          <div class="col-lg-4 col-md-4">
+            <div class="contact-about">
+              <h3>{{ page.page_title }}</h3>
+              <p> {{ page.page_footer_paragraph }} . .</p>
+              <div class="social-links">
+                <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+                <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="info">
+              <div>
+                <i class="ion-ios-location-outline"></i>
+                <p>{{ page.page_footer_location_paragraph}}</p>
+              </div>
+
+              <div>
+                <i class="ion-ios-email-outline"></i>
+                <p>kentnimite@gmail.com</p>
+              </div>
+
+              <div>
+                <i class="ion-ios-telephone-outline"></i>
+                <p>{{ page.page_footer_phonenumber_paragraph }}</p>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-lg-5 col-md-8">
+            <div class="form">
+              <div id="sendmessage">Your message has been sent. Thank you!</div>
+              <div id="errormessage"></div>
+              <form action="" method="post" role="form" class="contactForm">
+                <div class="form-row">
+                  <div class="form-group col-lg-6">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                    <div class="validation"></div>
+                  </div>
+                  <div class="form-group col-lg-6">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                    <div class="validation"></div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                  <div class="validation"></div>
+                </div>
+                <div class="text-center"><button type="submit" title="Send Message">Send Message</button></div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #contact -->
+
+  </main>
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 text-lg-left text-center">
+          <div class="copyright">
+            &copy; Copyright <strong>Mr Mac Computers</strong>. All Rights Reserved
+          </div>
+          <div class="credits">
+            <!--
+              All the links in the footer should remain intact.
+              You can delete the links only if you purchased the pro version.
+              Licensing information: https://bootstrapmade.com/license/
+              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Avilon
+            -->
+            Designed by <b>TSC (The Skynet Company)</b>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <nav class="footer-links text-lg-right text-center pt-2 pt-lg-0">
+            <a href="#intro" class="scrollto">Home</a>
+            <a href="#about" class="scrollto">About</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Use</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="{% static 'lib/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'lib/jquery/jquery-migrate.min.js' %}"></script>
+  <script src="{% static 'lib/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'lib/easing/easing.min.js' %}"></script>
+  <script src="{% static 'lib/wow/wow.min.js' %}"></script>
+  <script src="{% static 'lib/superfish/hoverIntent.js' %}"></script>
+  <script src="{% static 'lib/superfish/superfish.min.js' %}"></script>
+  <script src="{% static 'lib/magnific-popup/magnific-popup.min.js' %}"></script>
+
+  <!-- Contact Form JavaScript File -->
+  <script src="{% static 'contactform/contactform.js' %}"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="{% static 'js/main.js' %}"></script>
+
+</body>
+{% endfor %}
+</html>
